@@ -20,6 +20,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class MainActivity extends AppCompatActivity {
     private Button btnGetTime;
     private TextView txtTime;
+    private Button btn;
 
     private Retrofit retrofit;
     private String baseUrl="http://worldtimeapi.org/api/timezone";
