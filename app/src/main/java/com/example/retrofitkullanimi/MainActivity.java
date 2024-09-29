@@ -43,8 +43,15 @@ public class MainActivity extends AppCompatActivity {
                 setRetrofitSetting();
             }
         });
+
+        selam();
     }
-//http://worldtimeapi.org/api/timezone
+
+    private void selam() {
+        System.out.println("Selam");
+    }
+
+    //http://worldtimeapi.org/api/timezone
     private void setRetrofitSetting(){
     retrofit=new Retrofit.Builder().baseUrl(baseUrl)
             .addConverterFactory(GsonConverterFactory .create())
